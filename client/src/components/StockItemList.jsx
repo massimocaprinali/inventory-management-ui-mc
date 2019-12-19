@@ -14,6 +14,13 @@ import Header from "../pattern-components/Header";
 import "../pattern-components/patterns.scss";
 
 class StockItemList extends Component {
+
+    async componentDidMount() {
+      this.setState({
+        data: await this.props.stockService.listStockItems()
+      });
+    }
+
     title = 'Stock Items';
     subtitle = 'This is the current inventory of items';
     columns = [

@@ -70,10 +70,9 @@ class UIShell extends Component {
             </SideNavMenu>
           </SideNavItems>
         </SideNav>
-        <Content id="main-content"><UIShellBody patternName={this.state.patternName} /></Content>
+        <Content id="main-content"><UIShellBody patternName={this.state.patternName} stockService={this.props.stockService} /></Content>
       </div>
     );
   }
 }
-
 export default UIShell;
