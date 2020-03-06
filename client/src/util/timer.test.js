@@ -22,15 +22,4 @@ describe('timer', () => {
       expect(endTime - startTime).toBeGreaterThanOrEqual(expectedTime);
     });
   });
-
-  describe('when timer called with time and callback', () => {
-    test('should return result from callback after timer executes', async () => {
-      const startTime = new Date().getTime();
-
-      const expectedTime = 500;
-      const endTime = await timer(expectedTime, () => new Date().getTime());
-
-      expect(endTime - startTime).toBeGreaterThanOrEqual(expectedTime);
-    });
-  })
 });

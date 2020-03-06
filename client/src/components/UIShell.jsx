@@ -12,7 +12,7 @@ import {
 import UIShellBody from "./UIShellBody";
 
 const Fade20 = () => (
-  <svg icon width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">
+  <svg icon="true" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true">
     <path d="M8.24 25.14L7 26.67a14 14 0 0 0 4.18 2.44l.68-1.88a12
         12 0 0 1-3.62-2.09zm-4.05-7.07l-2 .35A13.89 13.89 0 0 0 3.86
         23l1.73-1a11.9 11.9 0 0 1-1.4-3.93zm7.63-13.31l-.68-1.88A14
@@ -26,7 +26,7 @@ class UIShell extends Component {
   header = "Big Blue Widgets";
   menuTitle = "Inventory Management";
   menuItems = [
-    "Stock Items",
+    "Stock Items"
   ];
 
   constructor(props) {
