@@ -7,11 +7,11 @@ export class StockItemService {
 
   async listStockItems() {
     return superagent
-      .get(this.baseUrl + '/stock-items')
-      .set('accept', 'application/json')
-      .then(res => {
-        console.log('Got response: ', res);
-        return res.body || [];
-      });
+        .get(this.baseUrl + '/stock-items')
+        .set('accept', 'application/json')
+        .then(res => {
+          console.log('Got response: ', res);
+          return res.body || [];
+        });
   }
 }

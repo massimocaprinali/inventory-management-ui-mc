@@ -1,12 +1,6 @@
 
-export default async function timer(time, callback) {
+export default async function(time) {
   return new Promise(resolve => {
-    setTimeout(() => {
-      if (callback) {
-        resolve(callback());
-      } else {
-        resolve();
-      }
-    }, time)
+    setTimeout(resolve, time);
   });
 }
